@@ -1,0 +1,24 @@
+<div id="messages">
+  <ul class="message">
+    <li *ngFor="let message of messages">
+      <span>{{message.content}}</span>
+    </li>
+  </ul>
+
+</div>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <label>Say something:</label><br>
+      <input type="text" data-behavior="room_speaker" name="content" [(ngModel)]="content">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <button type="submit">
+        <span></span>&nbsp;Submit
+      </button>
+    </div>
+  </div>
+</form>

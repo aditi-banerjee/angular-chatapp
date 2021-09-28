@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "my-chat-app": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-chat-app"
+    }
+  },
+  "defaultProject": "my-chat-app",
+  "cli": {
+    "analytics": "b471664d-3136-4c98-9747-b84b17f1ef0e"
+  }
 }
